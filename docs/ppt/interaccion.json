@@ -1,0 +1,108 @@
+{
+ "1": {
+  "min": 1.25,
+  "dice": "Antes de empezar, saquen su celular y escaneen este código con la cámara. Es nuestra web: la misma que vamos a explicar. Durante la exposición les vamos a pedir que toquen algunas cosas para que comprueben ustedes mismos lo que decimos.",
+  "pasos": [
+   "Abrir la cámara del celular y apuntar al código QR.",
+   "Tocar el enlace que aparece (redsteinyt.github.io/datasmart-olist)."
+  ],
+  "veran": "La portada de DataSmart con el escudo, la ficha del proyecto y el equipo.",
+  "espera": 30
+ },
+ "2": {
+  "min": 1.5,
+  "dice": "En la web, toquen el botón amarillo «Probar el modelo». Ven un pedido de São Paulo a Río de Janeiro: unos 14 de cada 100 llegarían tarde. Ahora, en «Llega a», elijan AL · Alagoas.",
+  "pasos": [
+   "Inicio → botón «Probar el modelo».",
+   "En «Llega a», elegir AL · Alagoas.",
+   "Opcional: subir «Plazo prometido» a 40 días."
+  ],
+  "veran": "El riesgo salta de 14 % (medio) a 36 % (alto) y la etiqueta se pone roja; el plazo se ajusta solo a 31 días. Con un plazo de 40 días el riesgo baja a cerca de 4 %.",
+  "espera": 40
+ },
+ "4": {
+  "min": 1.25,
+  "dice": "Toquen «Mapa» en la barra de abajo. Los estados más oscuros son los que más retrasos tienen. Toquen Alagoas, en la punta del noreste.",
+  "pasos": [
+   "Barra inferior → Mapa.",
+   "Tocar Alagoas (AL).",
+   "Tocar la opción «Días de entrega» encima del mapa."
+  ],
+  "veran": "El estado se levanta con relieve y aparecen sus números (casi 24 % de entregas tardías). Con «Días de entrega», el norte se oscurece: allí los envíos tardan más.",
+  "espera": 30
+ },
+ "6": {
+  "min": 1.5,
+  "opcional": true,
+  "dice": "Si quieren ver qué se compra junto: Más, luego Clientes, y toquen «Qué se compra junto».",
+  "pasos": [
+   "Barra inferior → Más → Clientes.",
+   "Tocar «Qué se compra junto»."
+  ],
+  "veran": "Las reglas con mayor lift; arriba, cama-baño-mesa con artículos de confort del hogar (lift 3,1).",
+  "espera": 20
+ },
+ "10": {
+  "min": 1.25,
+  "opcional": true,
+  "dice": "Esto lo pueden ver en Más, luego Modelo, bajando hasta «Tres bandas de riesgo».",
+  "pasos": [
+   "Más → Modelo.",
+   "Bajar hasta «Tres bandas de riesgo»."
+  ],
+  "veran": "Las tres barras: 3 % en la banda baja, cerca de 10 % en la media y 33 % en la alta.",
+  "espera": 15
+ },
+ "11": {
+  "min": 2.0,
+  "dice": "Ahora el momento clave. Toquen «Simulador» en la barra de abajo y luego «Pedido típico». Bajen a «Por qué este riesgo»: lo rojo sube el riesgo, lo verde lo baja. Ahora toquen «Fin de año con alta carga»… y por último «Compra holgada y local».",
+  "pasos": [
+   "Barra inferior → Simulador.",
+   "Tocar «Pedido típico» y bajar a «Por qué este riesgo».",
+   "Tocar «Fin de año con alta carga».",
+   "Tocar «Compra holgada y local»."
+  ],
+  "veran": "Pedido típico: 13,2 %, riesgo medio. Fin de año: 56,1 %, riesgo alto, y la barra roja más larga es la carga de la plataforma (+19 puntos). Compra holgada y local: 0,7 %, riesgo bajo. Cada número tiene su explicación.",
+  "espera": 60
+ },
+ "12": {
+  "min": 1.5,
+  "dice": "Toquen Más, luego Reseñas. En «Probar el analizador» toquen «Ejemplo 2». Después borren el texto y escriban en portugués: «O produto chegou rápido, mas veio quebrado».",
+  "pasos": [
+   "Más → Reseñas.",
+   "En «Probar el analizador», tocar «Ejemplo 2».",
+   "Escribir: O produto chegou rápido, mas veio quebrado (quebrado = roto)."
+  ],
+  "veran": "El Ejemplo 2 («Não recebi o produto…») sale 100 % negativo y marca «não recebi» con flecha hacia arriba. Su frase propia sale cerca de 80 % negativa: «quebrado» pesa más que «rápido».",
+  "espera": 45
+ },
+ "13": {
+  "min": 2.25,
+  "dice": "Ahora toquen Más y, en «Nivel de detalle», elijan Experto. Luego toquen Monitoreo. Arriba ven 0,72 de referencia frente a 0,70 en 2018, y «10 de 10» meses con deriva. Bajen al cuadro «Deriva de datos (PSI)»: la fila de la carga relativa está casi toda oscura. Como están en modo Experto, aparecen recuadros morados de «Detalle técnico» que explican cómo se calcula. Y al final, en «Registro de versiones», están los 28 modelos, cada uno con su huella SHA-256.",
+  "pasos": [
+   "Más → Nivel de detalle → Experto.",
+   "Más → Monitoreo.",
+   "Bajar hasta «Deriva de datos (PSI) por variable y mes».",
+   "Bajar hasta «Registro de versiones»."
+  ],
+  "veran": "0,72 frente a 0,70; 10 de 10 meses con deriva; el mapa de calor con la carga relativa en rojo oscuro; recuadros morados de detalle técnico; la tabla de 28 versiones con su hash.",
+  "espera": 60
+ },
+ "14": {
+  "min": 1.0,
+  "dice": "Ustedes ya la están usando en su celular. Prueben el interruptor de sol y luna arriba a la derecha: cambia a tema oscuro. Y si quieren volver a las explicaciones sencillas, en Más elijan Guiado.",
+  "pasos": [
+   "Tocar el interruptor de sol y luna (arriba a la derecha).",
+   "Más → Nivel de detalle → Guiado."
+  ],
+  "veran": "El tema oscuro se extiende en círculo desde el botón; en Guiado vuelven las explicaciones en lenguaje sencillo.",
+  "espera": 15
+ },
+ "18": {
+  "min": 0.5,
+  "dice": "La web queda abierta para ustedes: si alguien no la escaneó, el código está en pantalla.",
+  "pasos": [],
+  "veran": "",
+  "espera": 0
+ }
+}

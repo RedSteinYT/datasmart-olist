@@ -60,10 +60,42 @@ QA = [
 ("¿Por qué no usaron escalamiento en el modelo final?",
  "XGBoost parte por umbrales y no lo necesita. Comparamos MinMaxScaler y StandardScaler con modelos lineales y el AUC no cambió (0,711–0,712). También comparamos One-Hot y Label Encoding: no afecta a XGBoost, pero deteriora la regresión logística (0,677)."),
 ]
-H = "<html><head><meta charset='utf-8'><style>@page{size:A4;margin:20mm}body{font-family:Inter;font-size:10pt;line-height:1.5;color:#1f2937}h1{font-family:Caladea;color:#0f2544;font-size:20pt;border-bottom:1.5px solid #0f2544;padding-bottom:3pt}h2{font-family:Caladea;color:#0f766e;font-size:12.5pt;margin:12pt 0 3pt}.q{page-break-inside:avoid;margin-bottom:9pt}.q b{color:#0f2544}.who{font-size:8.5pt;color:#6b7280}p{margin:0 0 4pt}</style></head><body>"
-H += "<h1>Guion de sustentación — DataSmart (Grupo 4)</h1><p>18 diapositivas, unos 15 a 18 minutos. El reparto por diapositiva es una propuesta; cámbienlo según quién domine cada tema. Todos deben conocer todo el proyecto: las preguntas del jurado pueden ir a cualquiera.</p>"
+INTER = json.load(open(D / "ppt" / "interaccion.json"))
+CSS = ("@page{size:A4;margin:18mm}body{font-family:Inter;font-size:10pt;line-height:1.5;color:#1f2937}h1{font-family:Caladea;color:#0f2544;font-size:20pt;border-bottom:1.5px solid #0f2544;padding-bottom:3pt}"
+       "h2{font-family:Caladea;color:#0f2544;font-size:13pt;margin:0 0 2pt}.q{page-break-inside:avoid;margin-bottom:9pt}.q b{color:#0f2544}p{margin:0 0 4pt}"
+       ".sl{page-break-inside:avoid;border:1px solid #d8e0e8;border-radius:8pt;padding:8pt 10pt;margin:0 0 8pt}.meta{font-size:8.5pt;color:#5b6b80;margin-bottom:4pt}"
+       ".reloj{float:right;background:#0f2544;color:#fff;border-radius:99px;padding:1pt 8pt;font-size:8.5pt;font-weight:600}"
+       ".int{background:#fff8e6;border:1px solid #e8a900;border-radius:6pt;padding:6pt 9pt;margin-top:6pt}.int.op{background:#f4f7f9;border-color:#9fb2c9}"
+       ".int b.t{color:#a86f00;font-size:8.8pt}.int ol{margin:3pt 0 3pt 14pt;padding:0}.ver{font-size:9pt;color:#0f766e}"
+       "table{border-collapse:collapse;width:100%;font-size:9pt;margin:6pt 0}th{background:#0f2544;color:#fff;text-align:left;padding:3pt 6pt}td{border-bottom:1px solid #d8e0e8;padding:3pt 6pt}td.n{text-align:right}")
+H = f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body>"
+H += "<h1>Guion interactivo de sustentación — DataSmart (Grupo 4)</h1>"
+H += ("<p>El público tendrá la web en su celular desde la primera diapositiva (código QR). En los momentos marcados en amarillo, quien expone da una instrucción corta, "
+      "espera unos segundos mientras la gente toca y comenta lo que aparece en pantalla. Así cada afirmación se puede comprobar en vivo.</p>")
+T11 = round(sum(INTER.get(str(i), {}).get("min", 1.0) for i in range(1, 11)))
+H += "<h2 style='margin-top:10pt'>Reglas para que funcione (y no pase de 25 minutos)</h2><ol>"
+H += ("<li><b>Copiloto en el proyector.</b> Mientras uno expone, otro integrante que no esté hablando repite cada paso en la laptop, con la web abierta en la ventana del proyector, para quien no tenga celular o se pierda.</li>"
+      "<li><b>No esperar a todos.</b> Dar la instrucción, contar mentalmente los segundos indicados y seguir hablando sobre lo que aparece. Quien no llegó, lo ve en el proyector.</li>"
+      "<li><b>Nombrar lo que se toca tal como aparece en la web:</b> «Mapa», «Simulador», «Más», «Experto», «Pedido típico». En celular, las secciones que no están en la barra de abajo se abren con «Más».</li>"
+      f"<li><b>Control de tiempo.</b> A los {T11} minutos deberían estar entrando en la diapositiva 11. Si van atrasados, saltar los momentos opcionales (en gris).</li>"
+      "<li><b>Antes de empezar:</b> abrir la web en la laptop, en modo Guiado y tema claro, y probar el QR desde un celular.</li></ol>")
+filas = ""; acum = 0
+for i, sl in enumerate(g, 1):
+    it = INTER.get(str(i), {}); m = it.get("min", 1.0); acum += m
+    filas += f"<tr><td>{i}</td><td>{html.escape(sl['t'])}</td><td>{html.escape(sl['who'])}</td><td>{'Sí' + (' (opcional)' if it.get('opcional') else '') if it.get('pasos') else '—'}</td><td class='n'>{m:.2f}".replace('.', ',') + f"</td><td class='n'>{int(acum)}:{int(round((acum % 1) * 60)):02d}</td></tr>"
+H += f"<h2 style='margin-top:10pt'>Presupuesto de tiempo</h2><table><tr><th>N.º</th><th>Diapositiva</th><th>Expone</th><th>Interacción</th><th>Min.</th><th>Reloj</th></tr>{filas}</table>"
+H += f"<p>Total previsto: unos {round(acum)} minutos con todas las interacciones; sin las opcionales, cerca de {round(acum - 0.5 * sum(1 for v in INTER.values() if v.get('opcional')))} minutos. Queda margen para imprevistos sin pasar de 25 minutos, más las preguntas.</p>"
+H += "<h1 style='page-break-before:always'>Guion por diapositiva</h1>"
+acum = 0
 for i, s in enumerate(g, 1):
-    H += f"<h2>Diapositiva {i}. {html.escape(s['t'])} <span class='who'>— {html.escape(s['who'])}</span></h2><p>{html.escape(s['notes'])}</p>"
+    it = INTER.get(str(i), {}); m = it.get("min", 1.0); ini = acum; acum += m
+    H += f"<div class='sl'><span class='reloj'>{int(ini)}:{int(round((ini % 1) * 60)):02d} → {int(acum)}:{int(round((acum % 1) * 60)):02d}</span><h2>Diapositiva {i}. {html.escape(s['t'])}</h2><div class='meta'>Expone: {html.escape(s['who'])}</div><p>{html.escape(s['notes'])}</p>"
+    if it.get("pasos"):
+        H += f"<div class='int {'op' if it.get('opcional') else ''}'><b class='t'>MOMENTO INTERACTIVO{' · OPCIONAL' if it.get('opcional') else ''} · esperar ~{it['espera']} s</b><p><i>«{html.escape(it['dice'])}»</i></p>"
+        H += "<ol>" + "".join(f"<li>{html.escape(x)}</li>" for x in it["pasos"]) + "</ol>" + (f"<p class='ver'><b>Lo que verán:</b> {html.escape(it['veran'])}</p>" if it.get("veran") else "") + "</div>"
+    elif it.get("dice"):
+        H += f"<div class='int'><b class='t'>CIERRE</b><p><i>«{html.escape(it['dice'])}»</i></p></div>"
+    H += "</div>"
 H += "<h1 style='page-break-before:always'>Posibles preguntas y respuestas</h1><p>Todas las cifras provienen de los resultados del proyecto (informe final).</p>"
 for q, a in QA:
     H += f"<div class='q'><p><b>{html.escape(q)}</b></p><p>{html.escape(a)}</p></div>"

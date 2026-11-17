@@ -23,7 +23,10 @@ function light(s, kicker, title, who) { n++; s.background = { path: path.join(__
   T(s, "Expone: " + IR[who], { x: .62, y: 5.12, w: 2.4, h: .3, fontSize: 10, color: MUT, valign: "middle" });
   T(s, `${n} / ${TOTAL}`, { x: 8.5, y: 5.12, w: 1, h: .3, fontSize: 10, color: MUT, align: "right", valign: "middle" }); }
 function dark(s, plano) { n++; s.background = { path: path.join(__dirname, plano ? "bg_dark_plano.png" : "bg_dark.png") }; }
-function add(s, t, notes, who) { s.addNotes(notes); guion.push({ t, notes, who: IR[who] }); }
+const INTER = JSON.parse(fs.readFileSync(path.join(__dirname, "interaccion.json"), "utf8"));
+function add(s, t, notes, who) { const k = String(guion.length + 1), it = INTER[k];
+  let extra = ""; if (it && it.dice) extra = `\n\nMOMENTO INTERACTIVO${it.opcional ? " (opcional, solo si van bien de tiempo)" : ""}:\n${it.dice}` + (it.veran ? `\nLo que verán: ${it.veran}` : "");
+  s.addNotes(notes + extra); guion.push({ t, notes, who: IR[who] }); }
 async function filas(s, items, x, y, w, rowH, ic, bg, fg, size, tc) { for (let i = 0; i < items.length; i++) { const yy = y + i * rowH; await circ(s, ic, x, yy, .38, bg, fg); T(s, items[i], { x: x + .52, y: yy - .02, w: w - .52, h: rowH, fontSize: size || 14, color: tc || INK }); } }
 async function statCard(s, x, y, w, h, ic, col, big, small) { card(s, x, y, w, h); await circ(s, ic, x + .22, y + .22, .5, col, WH);
   T(s, big, { x: x + .22, y: y + .82, w: w - .44, h: .62, fontFace: "Cambria", fontSize: 32, bold: true, color: col, valign: "middle" });
