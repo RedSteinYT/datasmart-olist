@@ -37,12 +37,15 @@ async function statCard(s, x, y, w, h, ic, col, big, small) { card(s, x, y, w, h
   T(s, "Facultad de Ingeniería de Sistemas e Informática · Ingeniería de Software", { x: 1.3, y: .78, w: 6.5, h: .3, fontSize: 11, color: "A9BBD1" });
   T(s, "Minería de Datos · Grupo 4 · Proyecto final", { x: .55, y: 1.65, w: 6, h: .35, fontSize: 15, bold: true, color: AMB });
   T(s, [{ text: "Data", options: { color: WH } }, { text: "Smart", options: { color: AMB } }], { x: .55, y: 2.0, w: 6, h: 1.1, fontFace: "Cambria", fontSize: 64, bold: true, valign: "middle" });
-  T(s, "Anticipar entregas tardías en Olist y explicar por qué", { x: .55, y: 3.15, w: 5.4, h: .8, fontSize: 19, color: "CDD9E7" });
-  s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 6.25, y: 2.0, w: 3.25, h: 2.75, fill: { color: CREAM }, line: { color: CREAM, width: 0 }, rectRadius: .12, rotate: 2, shadow: { type: "outer", blur: 18, offset: 6, angle: 90, color: "000000", opacity: .45 }, objectName: "ficha" });
-  T(s, "Ficha del proyecto", { x: 6.45, y: 2.15, w: 2.9, h: .35, fontFace: "Cambria", fontSize: 15, bold: true, color: NAVY, rotate: 2 });
-  T(s, [["Curso", "Minería de Datos"], ["Equipo", "6 integrantes"], ["Datos", "Olist (Kaggle)"], ["Periodo", "2016 – 2018"], ["Pedidos", "96 469 entregados"]].map((r, i, a) => ({ text: r[0] + ":  " + r[1], options: { breakLine: i < a.length - 1, paraSpaceAfter: 4 } })), { x: 6.45, y: 2.6, w: 2.9, h: 1.7, fontSize: 12, color: INK, rotate: 2 });
+  T(s, "Anticipar entregas tardías y explicar por qué", { x: .55, y: 3.15, w: 5.4, h: .8, fontSize: 19, color: "CDD9E7" });
+  T(s, "96 469 pedidos reales de Olist (Brasil, 2016–2018)", { x: .55, y: 3.6, w: 5.4, h: .4, fontSize: 13, color: "A9BBD1" });
+  s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 6.55, y: 1.45, w: 2.95, h: 3.35, fill: { color: CREAM }, line: { color: CREAM, width: 0 }, rectRadius: .14, rotate: 2, shadow: { type: "outer", blur: 18, offset: 6, angle: 90, color: "000000", opacity: .45 }, objectName: "tarjeta QR" });
+  s.addImage({ path: path.join(__dirname, "qr.png"), x: 7.1, y: 1.7, w: 1.85, h: 1.85, rotate: 2, altText: "Código QR a redsteinyt.github.io/datasmart-olist" });
+  T(s, "Escanea y pruébalo", { x: 6.7, y: 3.65, w: 2.65, h: .4, fontFace: "Cambria", fontSize: 17, bold: true, color: NAVY, align: "center", rotate: 2 });
+  T(s, "redsteinyt.github.io/datasmart-olist", { x: 6.7, y: 4.05, w: 2.65, h: .3, fontSize: 11, color: MUT, align: "center", rotate: 2 });
+  T(s, "Funciona en el celular", { x: 6.7, y: 4.33, w: 2.65, h: .3, fontSize: 11, bold: true, color: TEAL, align: "center", rotate: 2 });
   T(s, "Castro · Poma de la Cruz · García · Morales · Espinoza · Guevara — Lima, noviembre de 2026", { x: .55, y: 4.95, w: 8.9, h: .3, fontSize: 11, color: "A9BBD1" });
-  add(s, "Portada", "Buenos días. Somos el Grupo 4 y presentamos DataSmart: una plataforma que, con datos reales de Olist, estima qué pedidos van a llegar tarde, explica por qué y se puede usar desde el navegador. Vamos a contar el recorrido completo, desde los datos hasta la aplicación, incluyendo lo que no salió tan bien.", 0);
+  add(s, "Portada", "Buenos días. Somos el Grupo 4 y presentamos DataSmart: una plataforma que, con datos reales de Olist, estima qué pedidos van a llegar tarde, explica por qué y se puede usar desde el navegador. Vamos a contar el recorrido completo, desde los datos hasta la aplicación, incluyendo lo que no salió tan bien. Si quieren, escaneen el código QR: abre nuestra web en su celular y pueden probarla mientras presentamos.", 0);
   // 2
   s = pres.addSlide(); light(s, "EL PROBLEMA", "La entrega define la satisfacción", 0);
   await statCard(s, .5, 1.35, 2.9, 2.2, "FiPackage", BLUE, "96 469", "pedidos entregados analizados (R$ 15,4 millones)");
@@ -125,7 +128,7 @@ async function statCard(s, x, y, w, h, ic, col, big, small) { card(s, x, y, w, h
   s = pres.addSlide(); light(s, "PRODUCTO", "El modelo corre en tu navegador", 1);
   await figura(s, "web_simulador", .5, 1.3, 5.9, 3.65, "Simulador en escritorio");
   card(s, 5.6, 2.0, 1.5, 3.05, WH, "teléfono"); await img(s, "web_movil_simulador", 5.67, 2.07, 1.36, 2.91, "Simulador en teléfono");
-  await filas(s, ["10 secciones, modo Guiado y Experto, tema claro y oscuro.", "Simulador con etiqueta de envío y explicación.", "Publicado gratis en Netlify."], 7.35, 1.45, 2.15, 1.15, "FiMonitor", SOFT, BLUE, 13);
+  await filas(s, ["10 secciones, modo Guiado y Experto, tema claro y oscuro.", "Simulador con etiqueta de envío y explicación.", "Publicado gratis en GitHub Pages."], 7.35, 1.45, 2.15, 1.15, "FiMonitor", SOFT, BLUE, 13);
   add(s, "Aplicación", "El producto es un panel web de diez secciones. Lo central es el simulador: describes un pedido y el modelo, que corre en tu propio navegador, calcula la probabilidad y explica qué factores la suben o bajan, presentado como una etiqueta de envío. Hay modo Guiado para no técnicos y modo Experto, y funciona en el celular. Aquí haremos una demostración en vivo.", 1);
   // 15
   s = pres.addSlide(); light(s, "CALIDAD", "Probado y desplegado sin costo", 2);
@@ -133,8 +136,8 @@ async function statCard(s, x, y, w, h, ic, col, big, small) { card(s, x, y, w, h
   await statCard(s, 3.55, 1.3, 2.9, 2.15, "FiGitMerge", BLUE, "3×10⁻⁷", "diferencia máxima entre Python y JavaScript");
   await statCard(s, 6.6, 1.3, 2.9, 2.15, "FiShield", AMBD, "0", "errores de consola en escritorio y móvil");
   card(s, .5, 3.7, 9, 1.2, NAVY, "despliegue"); await circ(s, "FiGlobe", .75, 3.97, .65, AMB, NAVY);
-  T(s, [{ text: "datasmart-olist-grupo4.netlify.app", options: { bold: true, color: WH, breakLine: true } }, { text: "También: GitHub Pages, Render (API), Docker y un único archivo HTML que se abre con doble clic.", options: { color: "CDD9E7", fontSize: 13 } }], { x: 1.6, y: 3.7, w: 7.7, h: 1.2, fontSize: 17, valign: "middle" });
-  add(s, "Calidad", "Como el modelo se evalúa en dos lenguajes, verificamos que coincidan: la diferencia máxima es de tres por diez a la menos siete. Hay 23 pruebas automáticas y una prueba de navegador sin errores. Está publicado gratis en Netlify, y también hay un único archivo HTML que se abre con doble clic.", 2);
+  T(s, [{ text: "redsteinyt.github.io/datasmart-olist", options: { bold: true, color: WH, breakLine: true } }, { text: "API en Render, código en GitHub, respaldo en Netlify y un archivo HTML que se abre con doble clic.", options: { color: "CDD9E7", fontSize: 13 } }], { x: 1.6, y: 3.7, w: 7.7, h: 1.2, fontSize: 17, valign: "middle" });
+  add(s, "Calidad", "Como el modelo se evalúa en dos lenguajes, verificamos que coincidan: la diferencia máxima es de tres por diez a la menos siete. Hay 23 pruebas automáticas y una prueba de navegador sin errores. Está publicado gratis en GitHub Pages, con la API en Render, y también hay un único archivo HTML que se abre con doble clic.", 2);
   // 16
   s = pres.addSlide(); light(s, "HONESTIDAD", "Limitaciones que reconocemos", 3);
   const lim = [["0,78 frente a 0,70", "La evaluación temporal es la expectativa realista", "FiClock"], ["Historia corta", "Menos de dos años: sin estacionalidad anual", "FiCalendar"], ["Poca recompra", "97 % compra una vez: reglas exploratorias", "FiRepeat"], ["Choques", "Noviembre de 2017 y la huelga de 2018 no se predicen", "FiCloudLightning"], ["Asociación", "Lo que mostramos no prueba causalidad", "FiLink"]];
@@ -154,7 +157,10 @@ async function statCard(s, x, y, w, h, ic, col, big, small) { card(s, x, y, w, h
   await img(s, "logo.png", .6, .5, .62, .72, "Escudo UNMSM");
   T(s, "Gracias", { x: .6, y: 1.7, w: 8.8, h: 1.1, fontFace: "Cambria", fontSize: 60, bold: true, color: WH, valign: "middle" });
   T(s, "¿Preguntas?", { x: .6, y: 2.8, w: 8.8, h: .6, fontSize: 26, color: AMB });
-  T(s, "Pruébalo: datasmart-olist-grupo4.netlify.app", { x: .6, y: 3.7, w: 8.8, h: .4, fontSize: 16, color: "CDD9E7" });
+  T(s, "Pruébalo: redsteinyt.github.io/datasmart-olist", { x: .6, y: 3.7, w: 5.6, h: .4, fontSize: 16, color: "CDD9E7" });
+  s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 6.9, y: 1.35, w: 2.5, h: 2.8, fill: { color: CREAM }, line: { color: CREAM, width: 0 }, rectRadius: .14, shadow: { type: "outer", blur: 18, offset: 6, angle: 90, color: "000000", opacity: .45 }, objectName: "tarjeta QR" });
+  s.addImage({ path: path.join(__dirname, "qr.png"), x: 7.25, y: 1.55, w: 1.8, h: 1.8, altText: "Código QR a la web" });
+  T(s, "Escanea y pruébalo", { x: 6.9, y: 3.5, w: 2.5, h: .4, fontFace: "Cambria", fontSize: 16, bold: true, color: NAVY, align: "center" });
   T(s, "Grupo 4 · Minería de Datos · UNMSM, FISI", { x: .6, y: 4.95, w: 8.8, h: .3, fontSize: 11, color: "A9BBD1" });
   add(s, "Cierre", "Gracias. Estamos atentos a sus preguntas.", 5);
   // dark slides fixed overlay: on light slides chart text etc.

@@ -1,7 +1,7 @@
 [
  {
   "t": "Portada",
-  "notes": "Buenos días. Somos el Grupo 4 y presentamos DataSmart: una plataforma que, con datos reales de Olist, estima qué pedidos van a llegar tarde, explica por qué y se puede usar desde el navegador. Vamos a contar el recorrido completo, desde los datos hasta la aplicación, incluyendo lo que no salió tan bien.",
+  "notes": "Buenos días. Somos el Grupo 4 y presentamos DataSmart: una plataforma que, con datos reales de Olist, estima qué pedidos van a llegar tarde, explica por qué y se puede usar desde el navegador. Vamos a contar el recorrido completo, desde los datos hasta la aplicación, incluyendo lo que no salió tan bien. Si quieren, escaneen el código QR: abre nuestra web en su celular y pueden probarla mientras presentamos.",
   "who": "Luis Alejandro Castro"
  },
  {
@@ -71,7 +71,7 @@
  },
  {
   "t": "Calidad",
-  "notes": "Como el modelo se evalúa en dos lenguajes, verificamos que coincidan: la diferencia máxima es de tres por diez a la menos siete. Hay 23 pruebas automáticas y una prueba de navegador sin errores. Está publicado gratis en Netlify, y también hay un único archivo HTML que se abre con doble clic.",
+  "notes": "Como el modelo se evalúa en dos lenguajes, verificamos que coincidan: la diferencia máxima es de tres por diez a la menos siete. Hay 23 pruebas automáticas y una prueba de navegador sin errores. Está publicado gratis en GitHub Pages, con la API en Render, y también hay un único archivo HTML que se abre con doble clic.",
   "who": "Alan García"
  },
  {
