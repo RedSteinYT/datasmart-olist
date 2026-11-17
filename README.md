@@ -10,7 +10,7 @@
 ![D3](https://img.shields.io/badge/visualización-D3.js-e8a900)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-lightgrey)
 
-**[Ver el panel en vivo](https://datasmart-olist-grupo4.netlify.app)** · **[API en vivo](https://datasmart-olist.onrender.com/api/health)** · **[Informe final (PDF)](docs/Informe_Final_DataSmart_Grupo4.pdf)** · **[Presentación](docs/Presentacion_DataSmart_Grupo4.pptx)**
+**[Ver el panel en vivo](https://redsteinyt.github.io/datasmart-olist/)** · **[API en vivo](https://datasmart-olist.onrender.com/api/health)** · **[Informe final (PDF)](docs/Informe_Final_DataSmart_Grupo4.pdf)** · **[Presentación](docs/Presentacion_DataSmart_Grupo4.pptx)**
 
 <sub>Proyecto final del curso de Minería de Datos · Universidad Nacional Mayor de San Marcos · FISI · Escuela de Ingeniería de Software · Grupo 4 · 2026</sub>
 
