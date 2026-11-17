@@ -1,0 +1,11 @@
+indicador,valor
+filas geolocalización,1000163.0
+duplicados exactos,261831.0
+filas fuera de Brasil (descartadas),42.0
+prefijos postales con coordenada,19010.0
+vendedores sin coordenada,7.0
+cobertura de distancia (% pedidos),99.51
+distancia mediana (km),433.9
+distancia promedio (km),600.4
+% mismo estado,36.0
+Spearman distancia vs días de entrega,0.543

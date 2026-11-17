@@ -1,0 +1,36 @@
+{"ts": "2026-11-17T00:00:00", "evento": "referencia", "n": 26116, "auc": 0.7198269273729879, "ap": 0.1382643665962256, "mae": 4.274221153523781}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "B. Mensual, ventana 6 meses", "version": "v2-B-2017-11", "n": 21167, "mes": "2017-11"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "C. Mensual, ventana 2 meses", "version": "v3-C-2017-11", "n": 8314, "mes": "2017-11"}
+{"ts": "2026-11-17T00:00:00", "evento": "alerta", "politica": "D. Solo si hay alerta, ventana 2 meses", "mes": "2017-11", "auc": 0.5920895489162182, "desv_calibracion": -0.7382502398120592}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "B. Mensual, ventana 6 meses", "version": "v4-B-2017-12", "n": 23333, "mes": "2017-12"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "C. Mensual, ventana 2 meses", "version": "v5-C-2017-12", "n": 8590, "mes": "2017-12"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "D. Solo si hay alerta, ventana 2 meses", "version": "v6-D-2017-12", "n": 8590, "mes": "2017-12", "motivo": "alerta del mes anterior"}
+{"ts": "2026-11-17T00:00:00", "evento": "alerta", "politica": "D. Solo si hay alerta, ventana 2 meses", "mes": "2017-12", "auc": 0.5855267612345418, "desv_calibracion": -0.681809295940483}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "B. Mensual, ventana 6 meses", "version": "v7-B-2018-01", "n": 26801, "mes": "2018-01"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "C. Mensual, ventana 2 meses", "version": "v8-C-2018-01", "n": 11452, "mes": "2018-01"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "D. Solo si hay alerta, ventana 2 meses", "version": "v9-D-2018-01", "n": 11452, "mes": "2018-01", "motivo": "alerta del mes anterior"}
+{"ts": "2026-11-17T00:00:00", "evento": "alerta", "politica": "D. Solo si hay alerta, ventana 2 meses", "mes": "2018-01", "auc": 0.6521718134119919, "desv_calibracion": -0.3840698298018683}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "B. Mensual, ventana 6 meses", "version": "v10-B-2018-02", "n": 29410, "mes": "2018-02"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "C. Mensual, ventana 2 meses", "version": "v11-C-2018-02", "n": 12719, "mes": "2018-02"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "D. Solo si hay alerta, ventana 2 meses", "version": "v12-D-2018-02", "n": 12719, "mes": "2018-02", "motivo": "alerta del mes anterior"}
+{"ts": "2026-11-17T00:00:00", "evento": "alerta", "politica": "D. Solo si hay alerta, ventana 2 meses", "mes": "2018-02", "auc": 0.6830176756300448, "desv_calibracion": -0.5331906447656283}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "B. Mensual, ventana 6 meses", "version": "v13-B-2018-03", "n": 32493, "mes": "2018-03"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "C. Mensual, ventana 2 meses", "version": "v14-C-2018-03", "n": 12392, "mes": "2018-03"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "D. Solo si hay alerta, ventana 2 meses", "version": "v15-D-2018-03", "n": 12392, "mes": "2018-03", "motivo": "alerta del mes anterior"}
+{"ts": "2026-11-17T00:00:00", "evento": "alerta", "politica": "D. Solo si hay alerta, ventana 2 meses", "mes": "2018-03", "auc": 0.6583767596709681, "desv_calibracion": -0.7544979129937841}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "B. Mensual, ventana 6 meses", "version": "v16-B-2018-04", "n": 34700, "mes": "2018-04"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "C. Mensual, ventana 2 meses", "version": "v17-C-2018-04", "n": 13278, "mes": "2018-04"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "D. Solo si hay alerta, ventana 2 meses", "version": "v18-D-2018-04", "n": 13278, "mes": "2018-04", "motivo": "alerta del mes anterior"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "B. Mensual, ventana 6 meses", "version": "v19-B-2018-05", "n": 37680, "mes": "2018-05"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "C. Mensual, ventana 2 meses", "version": "v20-C-2018-05", "n": 13339, "mes": "2018-05"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "B. Mensual, ventana 6 meses", "version": "v21-B-2018-06", "n": 40131, "mes": "2018-06"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "C. Mensual, ventana 2 meses", "version": "v22-C-2018-06", "n": 13711, "mes": "2018-06"}
+{"ts": "2026-11-17T00:00:00", "evento": "alerta", "politica": "D. Solo si hay alerta, ventana 2 meses", "mes": "2018-06", "auc": 0.6358171752367863, "desv_calibracion": 1.9970228212425507}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "B. Mensual, ventana 6 meses", "version": "v23-B-2018-07", "n": 39655, "mes": "2018-07"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "C. Mensual, ventana 2 meses", "version": "v24-C-2018-07", "n": 13519, "mes": "2018-07"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "D. Solo si hay alerta, ventana 2 meses", "version": "v25-D-2018-07", "n": 13519, "mes": "2018-07", "motivo": "alerta del mes anterior"}
+{"ts": "2026-11-17T00:00:00", "evento": "alerta", "politica": "D. Solo si hay alerta, ventana 2 meses", "mes": "2018-07", "auc": 0.615389615991324, "desv_calibracion": 0.5377439704278242}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "B. Mensual, ventana 6 meses", "version": "v26-B-2018-08", "n": 40240, "mes": "2018-08"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "C. Mensual, ventana 2 meses", "version": "v27-C-2018-08", "n": 12817, "mes": "2018-08"}
+{"ts": "2026-11-17T00:00:00", "evento": "reentrenamiento", "politica": "D. Solo si hay alerta, ventana 2 meses", "version": "v28-D-2018-08", "n": 12817, "mes": "2018-08", "motivo": "alerta del mes anterior"}
+{"ts": "2026-11-17T00:00:00", "evento": "alerta", "politica": "D. Solo si hay alerta, ventana 2 meses", "mes": "2018-08", "auc": 0.471950128592195, "desv_calibracion": -0.013449571146206485}

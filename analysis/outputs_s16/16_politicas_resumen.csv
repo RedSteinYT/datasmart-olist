@@ -1,0 +1,5 @@
+politica,AUC_ROC,AUC_PR,Brier,abs_calib,captura_Alto,meses_alerta,reentrenamientos
+A. Congelado (ene-sep 2017),0.6414,0.1605,0.0885,0.6204,0.307,7,0
+"B. Mensual, ventana 6 meses",0.6301,0.1588,0.0911,0.9195,0.1366,6,10
+"C. Mensual, ventana 2 meses",0.6421,0.1579,0.0913,0.7399,0.1485,6,10
+"D. Solo si hay alerta, ventana 2 meses",0.6274,0.1495,0.0902,0.6144,0.1389,7,7

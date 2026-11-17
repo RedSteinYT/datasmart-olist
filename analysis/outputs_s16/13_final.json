@@ -1,0 +1,42 @@
+{
+  "final": {
+    "AUC_ROC": 0.7828417439198642,
+    "AUC_PR": 0.3168536832827226,
+    "F1": 0.36496350364963503,
+    "precision": 0.3482298316889147,
+    "exhaustividad": 0.38338658146964855,
+    "umbral": 0.18336856365203857
+  },
+  "ic95": {
+    "AUC_ROC_ic95": [
+      0.7687002355165312,
+      0.7936534976817354
+    ],
+    "AUC_PR_ic95": [
+      0.2912021840897876,
+      0.3414963925559149
+    ]
+  },
+  "umbral_validacion": 0.1735638529062271,
+  "precision_val": 0.3271604938271605,
+  "exhaustividad_val": 0.40638977635782747,
+  "q60": 0.06530494093894959,
+  "q90": 0.17463202774524691,
+  "brier": 0.06481266766786575,
+  "tasa_base": 0.08111329947133825,
+  "n_train": 77175,
+  "n_test": 19294,
+  "hiperparametros": {
+    "n_estimators": 300,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "tree_method": "hist",
+    "n_jobs": 2,
+    "random_state": 42,
+    "eval_metric": "logloss",
+    "max_depth": 6,
+    "min_child_weight": 5,
+    "reg_lambda": 1.0
+  }
+}

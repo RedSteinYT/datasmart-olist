@@ -1,0 +1,92 @@
+[
+ {
+  "t": "Portada",
+  "notes": "Buenos días. Somos el Grupo 4 y presentamos DataSmart: una plataforma que, con datos reales de Olist, estima qué pedidos van a llegar tarde, explica por qué y se puede usar desde el navegador. Vamos a contar el recorrido completo, desde los datos hasta la aplicación, incluyendo lo que no salió tan bien.",
+  "who": "Luis Alejandro Castro"
+ },
+ {
+  "t": "Problema",
+  "notes": "Olist conecta vendedores con compradores en Brasil. Analizamos 96 469 pedidos entregados. El 8,1 % llega tarde, y esos pedidos terminan con reseña baja el 54 % de las veces frente al 9 % de los puntuales. Por eso la pregunta central es anticipar el retraso al momento de comprar, y hacerlo de forma que una persona no técnica lo entienda.",
+  "who": "Luis Alejandro Castro"
+ },
+ {
+  "t": "Recorrido",
+  "notes": "Seguimos CRISP-DM. Los dos primeros entregables fijaron el negocio, los datos y la preparación; el tercero trajo asociación, clustering, series, grafos y regresión; el cuarto, que es el que presentamos hoy, agrega clasificación, minería de textos, explicabilidad, monitoreo y la aplicación web. Todo está en scripts reproducibles.",
+  "who": "Yessly Poma"
+ },
+ {
+  "t": "Destino",
+  "notes": "El retraso no se reparte parejo: algunos estados del norte y noreste superan el 20 por ciento. Para medir distancia tuvimos que depurar la tabla de geolocalización, que tenía más de 261 mil duplicados. La distancia mediana vendedor–comprador es de 434 kilómetros y solo el 36 por ciento de las ventas se queda en el mismo estado.",
+  "who": "Yessly Poma"
+ },
+ {
+  "t": "Variables",
+  "notes": "Agregamos cuatro familias de variables: distancia, plazo prometido, carga reciente de la plataforma e historial del vendedor, este último calculado solo con pedidos anteriores para no filtrar información del futuro. Revisamos colinealidad con VIF, máximo 3,66, y probamos PCA, LDA y QDA; ninguno mejoró al modelo completo, y lo documentamos como resultado negativo.",
+  "who": "Alan García"
+ },
+ {
+  "t": "Clientes",
+  "notes": "En el tercer entregable segmentamos con K-Means. El hallazgo clave es un grupo de insatisfechos con entrega lenta: 15 por ciento de clientes, reseña media de 1,66 y 21 días de entrega. Los tres algoritmos de asociación dan los mismos resultados, solo cambia el tiempo. El grafo muestra que el hogar es el núcleo de las compras cruzadas. Y para ventas diarias, un Ridge con rezagos superó a SARIMA y Prophet con 11,8 por ciento de error.",
+  "who": "Alan García"
+ },
+ {
+  "t": "Regresión",
+  "notes": "Para predecir cuántos días tardará un pedido construimos tres versiones. Con las variables básicas el R cuadrado era 0,29. Al sumar distancia llegó a 0,32 y con plazo prometido, carga de la plataforma e historial del vendedor, a 0,41. El error medio es de 4,4 días. Es un resultado moderado: mucha de la demora depende de eventos que no están en los datos.",
+  "who": "Luis David Morales"
+ },
+ {
+  "t": "Clasificación",
+  "notes": "El modelo central es un XGBoost que estima la probabilidad de entrega tardía. Como solo el 8 por ciento llega tarde, usamos AUC-PR además de AUC-ROC. Obtuvimos 0,783 y 0,317, contra 0,081 que daría el azar. Con intervalos de confianza por bootstrap. Lo comparamos con cuatro algoritmos más; los de árboles potenciados fueron los mejores.",
+  "who": "Luis David Morales"
+ },
+ {
+  "t": "Balanceo",
+  "notes": "La propuesta pedía probar undersampling, oversampling, SMOTE y ADASYN. Los probamos todos y el resultado fue claro: ninguno supera al entrenamiento sin balancear, y SMOTE y ADASYN empeoran bastante. Lo reportamos tal cual. En este problema funciona mejor ajustar el umbral y trabajar con bandas de riesgo.",
+  "who": "Diego Espinoza"
+ },
+ {
+  "t": "Bandas",
+  "notes": "Para uso práctico dividimos el riesgo en tres bandas. En la alta, que es el 10 por ciento de los pedidos, el 33 por ciento llega tarde, cuatro veces más que el promedio, y captura el 40 por ciento de todos los retrasos. En la baja solo llega tarde el 3 por ciento. La calibración es buena hasta el riesgo medio.",
+  "who": "Diego Espinoza"
+ },
+ {
+  "t": "Explicabilidad",
+  "notes": "Mostramos tres miradas: importancia por permutación, SHAP y LIME. Las dos primeras coinciden: plazo prometido, destino y carga de la plataforma. SHAP es exacto, porque la suma de aportes reproduce la probabilidad. LIME coincide solo parcialmente con SHAP, incluso con un caso negativo, así que lo usamos como contraste y no como verdad.",
+  "who": "Christian Guevara"
+ },
+ {
+  "t": "Textos",
+  "notes": "Analizamos casi 40 mil comentarios en portugués. Un clasificador de sentimiento llega a 0,973 de AUC. La entrega es lo que más mencionan, 53 por ciento, y devoluciones es poco frecuente pero muy negativo, 75 por ciento. Y cierra el círculo: los pedidos de riesgo alto reciben 39 por ciento de comentarios negativos contra 20 por ciento en riesgo bajo.",
+  "who": "Christian Guevara"
+ },
+ {
+  "t": "Monitoreo",
+  "notes": "No nos quedamos en describir el monitoreo: lo simulamos mes a mes con datos reales. Medimos deriva con PSI, definimos alertas y comparamos cuatro políticas de reentrenamiento. La conclusión es honesta: reentrenar todos los meses no mejora al modelo congelado, porque los choques, como noviembre de 2017 o la huelga de mayo de 2018, no se aprenden del pasado. Y al evaluar en el tiempo el AUC es 0,70, no 0,78. Cada versión queda registrada con hash SHA-256 y auditoría.",
+  "who": "Luis Alejandro Castro"
+ },
+ {
+  "t": "Aplicación",
+  "notes": "El producto es un panel web de diez secciones. Lo central es el simulador: describes un pedido y el modelo, que corre en tu propio navegador, calcula la probabilidad y explica qué factores la suben o bajan, presentado como una etiqueta de envío. Hay modo Guiado para no técnicos y modo Experto, y funciona en el celular. Aquí haremos una demostración en vivo.",
+  "who": "Yessly Poma"
+ },
+ {
+  "t": "Calidad",
+  "notes": "Como el modelo se evalúa en dos lenguajes, verificamos que coincidan: la diferencia máxima es de tres por diez a la menos siete. Hay 23 pruebas automáticas y una prueba de navegador sin errores. Está publicado gratis en Netlify, y también hay un único archivo HTML que se abre con doble clic.",
+  "who": "Alan García"
+ },
+ {
+  "t": "Limitaciones",
+  "notes": "Queremos ser claros con los límites. El número que mejor describe el futuro es 0,70 y no 0,78. La historia es corta, casi todos los clientes compran una vez, los choques no se anticipan con el pasado, y todo lo que mostramos son asociaciones, no causas.",
+  "who": "Luis David Morales"
+ },
+ {
+  "t": "Conclusiones",
+  "notes": "Para cerrar: la logística conecta todos los resultados; se puede anticipar el retraso y explicarlo, aunque con la salvedad temporal; los factores principales son plazo, destino y carga; reentrenar no basta sin monitoreo y variables que anticipen choques; y entregamos un producto gratuito, explicable y probado. Como trabajo futuro, agregar calendario y huelgas y más años de datos. Gracias, quedamos atentos a sus preguntas.",
+  "who": "Diego Espinoza"
+ },
+ {
+  "t": "Cierre",
+  "notes": "Gracias. Estamos atentos a sus preguntas.",
+  "who": "Christian Guevara"
+ }
+]

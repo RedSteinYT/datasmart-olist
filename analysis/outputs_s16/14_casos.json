@@ -1,0 +1,332 @@
+[
+ {
+  "caso": "Riesgo alto y se cumplió el retraso",
+  "riesgo": 0.29759886860847473,
+  "real": "Llegó tarde",
+  "corr_shap_lime": 0.5654135338345864,
+  "base_pp": 8.44311865885674,
+  "banda": "Alto",
+  "factores": [
+   {
+    "grupo": "carga_rel",
+    "variable": "Carga relativa de la plataforma (7 días vs. 8 semanas previas)",
+    "valor": "2.2745925665376947",
+    "shap_pp": 14.068851821378809,
+    "lime": 0.042492681135035106
+   },
+   {
+    "grupo": "dias_aprobacion",
+    "variable": "Días hasta aprobar el pago",
+    "valor": "1.7681828703703704",
+    "shap_pp": 2.8526202735560457,
+    "lime": 0.027129109016416634
+   },
+   {
+    "grupo": "dias_estimados",
+    "variable": "Plazo prometido (días)",
+    "valor": "25.31094907407408",
+    "shap_pp": -2.8513116758365675,
+    "lime": -0.02711328559291905
+   },
+   {
+    "grupo": "customer_state",
+    "variable": "Estado del comprador",
+    "valor": "GO",
+    "shap_pp": 2.7974193467711252,
+    "lime": -0.17392080038295255
+   },
+   {
+    "grupo": "mismo_estado",
+    "variable": "Vendedor y comprador en el mismo estado",
+    "valor": "0",
+    "shap_pp": 2.0416437436354706,
+    "lime": 0.03496693071420281
+   },
+   {
+    "grupo": "distancia_km",
+    "variable": "Distancia vendedor-comprador (km)",
+    "valor": "967.3805672063758",
+    "shap_pp": 1.764278532542976,
+    "lime": 0.04587242257120578
+   },
+   {
+    "grupo": "vend_hist_tardio",
+    "variable": "% de entregas tardías históricas del vendedor",
+    "valor": "0.0699087220654296",
+    "shap_pp": 1.4730385235696934,
+    "lime": 0.014846742632528737
+   },
+   {
+    "grupo": "dia_semana",
+    "variable": "Día de la semana de compra",
+    "valor": "5",
+    "shap_pp": -1.284813275741842,
+    "lime": 0.0006487246758757196
+   }
+  ]
+ },
+ {
+  "caso": "Riesgo bajo y llegó a tiempo",
+  "riesgo": 0.03191689774394035,
+  "real": "A tiempo",
+  "corr_shap_lime": 0.6962406015037594,
+  "base_pp": 8.44311865885674,
+  "banda": "Bajo",
+  "factores": [
+   {
+    "grupo": "dias_estimados",
+    "variable": "Plazo prometido (días)",
+    "valor": "27.36949074074074",
+    "shap_pp": -2.4196978084877987,
+    "lime": -0.030840706337196065
+   },
+   {
+    "grupo": "vend_hist_dias",
+    "variable": "Días de entrega históricos del vendedor",
+    "valor": "10.453627320589309",
+    "shap_pp": -2.2149248137535342,
+    "lime": -0.03658284209037146
+   },
+   {
+    "grupo": "carga_rel",
+    "variable": "Carga relativa de la plataforma (7 días vs. 8 semanas previas)",
+    "valor": "0.8792116973935156",
+    "shap_pp": -1.5887503361135182,
+    "lime": -0.035941238944198046
+   },
+   {
+    "grupo": "customer_state",
+    "variable": "Estado del comprador",
+    "valor": "ES",
+    "shap_pp": 1.494772130144738,
+    "lime": -0.10699861475198921
+   },
+   {
+    "grupo": "vend_hist_n",
+    "variable": "Pedidos previos del vendedor",
+    "valor": "770.0",
+    "shap_pp": -0.7518717056838073,
+    "lime": -0.003748989816034642
+   },
+   {
+    "grupo": "mismo_estado",
+    "variable": "Vendedor y comprador en el mismo estado",
+    "valor": "0",
+    "shap_pp": 0.42081391435390186,
+    "lime": 0.030224336636624324
+   },
+   {
+    "grupo": "flete_total",
+    "variable": "Flete",
+    "valor": "18.09",
+    "shap_pp": 0.2214301047614102,
+    "lime": 0.001627010505686154
+   },
+   {
+    "grupo": "cat",
+    "variable": "Categoría del producto",
+    "valor": "cool_stuff",
+    "shap_pp": -0.19876640390531114,
+    "lime": -0.03338485531780123
+   }
+  ]
+ },
+ {
+  "caso": "Riesgo medio",
+  "riesgo": 0.09717901051044464,
+  "real": "A tiempo",
+  "corr_shap_lime": -0.13233082706766916,
+  "base_pp": 8.44311865885674,
+  "banda": "Medio",
+  "factores": [
+   {
+    "grupo": "customer_state",
+    "variable": "Estado del comprador",
+    "valor": "SC",
+    "shap_pp": 1.6719198881577315,
+    "lime": -0.014663348062552747
+   },
+   {
+    "grupo": "mismo_estado",
+    "variable": "Vendedor y comprador en el mismo estado",
+    "valor": "0",
+    "shap_pp": 1.0335450651437414,
+    "lime": 0.03425857018348128
+   },
+   {
+    "grupo": "dias_aprobacion",
+    "variable": "Días hasta aprobar el pago",
+    "valor": "0.0061689814814814",
+    "shap_pp": -0.7567894889648603,
+    "lime": -0.010994376692227557
+   },
+   {
+    "grupo": "vend_hist_n",
+    "variable": "Pedidos previos del vendedor",
+    "valor": "21.0",
+    "shap_pp": -0.6050303769301009,
+    "lime": 0.0014033984991173858
+   },
+   {
+    "grupo": "peso_total_g",
+    "variable": "Peso",
+    "valor": "2152.0",
+    "shap_pp": 0.3942411157816278,
+    "lime": 0.007530229026658029
+   },
+   {
+    "grupo": "distancia_km",
+    "variable": "Distancia vendedor-comprador (km)",
+    "valor": "485.820927018684",
+    "shap_pp": -0.34251927155104206,
+    "lime": -0.004434847497921464
+   },
+   {
+    "grupo": "ratio_flete",
+    "variable": "Flete / precio",
+    "valor": "0.1953068592057761",
+    "shap_pp": -0.27309667528116105,
+    "lime": 0.002005829133913338
+   },
+   {
+    "grupo": "n_items",
+    "variable": "Ítems por pedido",
+    "valor": "1",
+    "shap_pp": 0.24591855371345547,
+    "lime": 0.008809009606519428
+   }
+  ]
+ },
+ {
+  "caso": "Falsa alarma: riesgo alto pero llegó a tiempo",
+  "riesgo": 0.2703306972980499,
+  "real": "A tiempo",
+  "corr_shap_lime": 0.30225563909774433,
+  "base_pp": 8.44311865885674,
+  "banda": "Alto",
+  "factores": [
+   {
+    "grupo": "dias_estimados",
+    "variable": "Plazo prometido (días)",
+    "valor": "14.449039351851852",
+    "shap_pp": 7.841684235898317,
+    "lime": 0.09046510923028334
+   },
+   {
+    "grupo": "customer_state",
+    "variable": "Estado del comprador",
+    "valor": "ES",
+    "shap_pp": 5.4551257387730905,
+    "lime": -0.08004792346165937
+   },
+   {
+    "grupo": "mismo_estado",
+    "variable": "Vendedor y comprador en el mismo estado",
+    "valor": "0",
+    "shap_pp": 1.8406720719329104,
+    "lime": 0.03473998383108007
+   },
+   {
+    "grupo": "precio_total",
+    "variable": "Precio del pedido",
+    "valor": "899.0",
+    "shap_pp": -0.7339055738519763,
+    "lime": 0.0065599653699064935
+   },
+   {
+    "grupo": "distancia_km",
+    "variable": "Distancia vendedor-comprador (km)",
+    "valor": "742.5855623372507",
+    "shap_pp": 0.6996385147304118,
+    "lime": 0.000961752822647276
+   },
+   {
+    "grupo": "flete_total",
+    "variable": "Flete",
+    "valor": "22.26",
+    "shap_pp": 0.6325570227237014,
+    "lime": 0.007558392257363185
+   },
+   {
+    "grupo": "dias_aprobacion",
+    "variable": "Días hasta aprobar el pago",
+    "valor": "0.1421296296296296",
+    "shap_pp": 0.5444154953225788,
+    "lime": 0.003823490905867324
+   },
+   {
+    "grupo": "volumen_total_cm3",
+    "variable": "Volumen",
+    "valor": "2688.0",
+    "shap_pp": 0.537689907741191,
+    "lime": -0.005842028851215369
+   }
+  ]
+ },
+ {
+  "caso": "Caso difícil: llegó tarde con riesgo bajo",
+  "riesgo": 0.040703993290662766,
+  "real": "Llegó tarde",
+  "corr_shap_lime": 0.4827067669172932,
+  "base_pp": 8.44311865885674,
+  "banda": "Bajo",
+  "factores": [
+   {
+    "grupo": "dias_estimados",
+    "variable": "Plazo prometido (días)",
+    "valor": "37.12251157407408",
+    "shap_pp": -5.9951981480426335,
+    "lime": -0.07468428976584257
+   },
+   {
+    "grupo": "carga_rel",
+    "variable": "Carga relativa de la plataforma (7 días vs. 8 semanas previas)",
+    "valor": "0.6640366103834622",
+    "shap_pp": -2.6855268205130662,
+    "lime": -0.03588041491638795
+   },
+   {
+    "grupo": "customer_state",
+    "variable": "Estado del comprador",
+    "valor": "RJ",
+    "shap_pp": 2.520194108877135,
+    "lime": -0.02729740830708545
+   },
+   {
+    "grupo": "volumen_total_cm3",
+    "variable": "Volumen",
+    "valor": "56250.0",
+    "shap_pp": 1.0438335779356065,
+    "lime": 0.0034115946059451734
+   },
+   {
+    "grupo": "dia_semana",
+    "variable": "Día de la semana de compra",
+    "valor": "6",
+    "shap_pp": -0.5203116375813032,
+    "lime": -0.007824690475478803
+   },
+   {
+    "grupo": "vend_hist_dias",
+    "variable": "Días de entrega históricos del vendedor",
+    "valor": "13.190177660672331",
+    "shap_pp": -0.49818933732035775,
+    "lime": -0.002440029347815134
+   },
+   {
+    "grupo": "hora",
+    "variable": "Hora de compra",
+    "valor": "21",
+    "shap_pp": 0.4254886802068539,
+    "lime": 0.0049007787429911675
+   },
+   {
+    "grupo": "cat",
+    "variable": "Categoría del producto",
+    "valor": "baby",
+    "shap_pp": 0.40565807557042827,
+    "lime": -0.056743387372817214
+   }
+  ]
+ }
+]

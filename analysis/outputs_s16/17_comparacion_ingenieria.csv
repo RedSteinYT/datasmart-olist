@@ -1,0 +1,7 @@
+modelo,n_variables,AUC_ROC,AUC_PR
+"Regresión logística (todas, 61)",61,0.7116,0.1723
+Regresión logística (6 numéricas top + categorías),49,0.7075,0.1681
+Regresión logística (PCA 13 + categorías),56,0.6983,0.1626
+LDA (numéricas),18,0.6747,0.1409
+QDA (numéricas),18,0.6593,0.1287
+LDA (PCA),13,0.6645,0.135

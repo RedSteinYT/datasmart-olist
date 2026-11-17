@@ -1,0 +1,4 @@
+modelo,n_clusters,silhouette,davies_bouldin,calinski,ruido,muestra
+K-Means (k=4),4,0.23944059308895357,1.2624688937290525,24823.25663166173,0.0,completo (93k)
+Hierarchical Ward (k=4),4,0.18597340806029064,1.4079658876736982,1744.0804374940042,0.0,"8,000"
+"DBSCAN (eps=0.9, min=30)",1,,,,0.12725,"8,000"

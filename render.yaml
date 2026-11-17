@@ -1,0 +1,12 @@
+# Render Blueprint: crea el servicio web gratuito con la API + el tablero.
+services:
+  - type: web
+    name: datasmart-olist
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements-api.txt
+    startCommand: gunicorn app.api:app --bind 0.0.0.0:$PORT --workers 1 --timeout 120
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.4

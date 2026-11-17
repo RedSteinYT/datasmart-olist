@@ -1,0 +1,6 @@
+caso,riesgo,real,corr_shap_lime
+Riesgo alto y se cumplió el retraso,0.29759886860847473,Llegó tarde,0.5654135338345864
+Riesgo bajo y llegó a tiempo,0.03191689774394035,A tiempo,0.6962406015037594
+Riesgo medio,0.09717901051044464,A tiempo,-0.13233082706766916
+Falsa alarma: riesgo alto pero llegó a tiempo,0.2703306972980499,A tiempo,0.30225563909774433
+Caso difícil: llegó tarde con riesgo bajo,0.040703993290662766,Llegó tarde,0.4827067669172932

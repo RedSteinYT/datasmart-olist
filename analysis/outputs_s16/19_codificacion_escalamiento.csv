@@ -1,0 +1,10 @@
+modelo,codificacion,escalamiento,AUC_ROC,AUC_PR
+Regresión logística,One-Hot,ninguno,0.7116,0.1723
+SVM lineal (calibrado),One-Hot,ninguno,0.7113,0.1722
+Regresión logística,One-Hot,StandardScaler,0.7116,0.1723
+SVM lineal (calibrado),One-Hot,StandardScaler,0.7113,0.1722
+Regresión logística,One-Hot,MinMaxScaler,0.7108,0.1724
+SVM lineal (calibrado),One-Hot,MinMaxScaler,0.7106,0.1723
+XGBoost,One-Hot,ninguno,0.7765,0.3027
+XGBoost,Label Encoding,ninguno,0.7769,0.3018
+Regresión logística,Label Encoding,StandardScaler,0.6773,0.1429

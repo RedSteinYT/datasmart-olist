@@ -1,0 +1,4 @@
+algoritmo,itemsets_frecuentes,reglas,tiempo_s
+Apriori,115,105,0.095
+FP-Growth,115,105,0.007
+ECLAT,115,105,0.002

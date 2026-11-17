@@ -1,0 +1,25 @@
+{
+ "n_resenas": 39661,
+ "pct_con_comentario": 0.4111268905036851,
+ "vocabulario": 3000,
+ "sentimiento": {
+  "Regresión logística": {
+   "exactitud": 0.9284,
+   "F1_negativa": 0.8702,
+   "F1_macro": 0.9104,
+   "AUC_ROC": 0.9725
+  },
+  "Naive Bayes (complemento)": {
+   "exactitud": 0.9127,
+   "F1_negativa": 0.8471,
+   "F1_macro": 0.893,
+   "AUC_ROC": 0.9699
+  },
+  "SVM lineal": {
+   "exactitud": 0.9289,
+   "F1_negativa": 0.8708,
+   "F1_macro": 0.9109,
+   "AUC_ROC": 0.972
+  }
+ }
+}

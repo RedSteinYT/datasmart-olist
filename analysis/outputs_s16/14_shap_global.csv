@@ -1,0 +1,21 @@
+grupo,variable,shap_abs_medio_pp,shap_medio_pp
+dias_estimados,Plazo prometido (días),3.4477425245623325,-0.1739459191940649
+customer_state,Estado del comprador,2.420498626167088,0.1719975982682349
+carga_rel,Carga relativa de la plataforma (7 días vs. 8 semanas previas),2.004181462841913,0.3772367515092185
+distancia_km,Distancia vendedor-comprador (km),1.5871933496097126,-0.11756971761909206
+vend_hist_dias,Días de entrega históricos del vendedor,1.5631506010310037,-0.4324362803860134
+mismo_estado,Vendedor y comprador en el mismo estado,1.0882282949957083,-0.10803067954712935
+dias_aprobacion,Días hasta aprobar el pago,0.6844050937957137,0.03486807207312313
+vend_hist_tardio,% de entregas tardías históricas del vendedor,0.5710518876294636,0.012599094960868938
+flete_total,Flete,0.4741179077076386,-0.05053889997222527
+vend_hist_n,Pedidos previos del vendedor,0.38179554291934453,-0.11298106427770352
+volumen_total_cm3,Volumen,0.3293184071854484,-0.002613625284302695
+peso_total_g,Peso,0.3108751830202565,0.07707342353173677
+n_items,Ítems por pedido,0.25182169838193413,0.03710814500002177
+ratio_flete,Flete / precio,0.21757323750868385,-0.01913586612469153
+cat,Categoría del producto,0.21545745490725313,-0.01887851690889253
+hora,Hora de compra,0.2106763877054388,0.06423241235638454
+n_vendedores,Vendedores en el pedido,0.19382934516131592,0.06919122385655088
+dia_semana,Día de la semana de compra,0.1918920019259931,-0.0008149959071154454
+precio_total,Precio del pedido,0.18277104588307283,0.04939841099493924
+n_cuotas,Cuotas de pago,0.10478386090887304,-0.014230323455351277

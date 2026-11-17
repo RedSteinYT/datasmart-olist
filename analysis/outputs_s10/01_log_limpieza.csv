@@ -1,0 +1,28 @@
+indicador,valor
+duplicados exactos orders,0
+duplicados exactos items,0
+duplicados exactos payments,0
+duplicados exactos customers,0
+duplicados exactos products,0
+duplicados exactos reviews,0
+order_id duplicados en orders,0
+nulos fecha entrega cliente (todos los estados),2965
+nulos categoría producto,610
+inconsistencia entrega < compra,0
+pagos con valor 0,9
+ítems con precio <=0,0
+pedidos con >1 reseña,547
+nulos product_weight_g,2
+nulos product_length_cm,2
+nulos product_height_cm,2
+nulos product_width_cm,2
+pedidos entregados válidos,96470
+filas tras integrar,96469
+outliers IQR valor_pago,7575
+outliers Z>3 valor_pago,1698
+outliers IQR dias_entrega,4895
+outliers Z>3 dias_entrega,1571
+outliers IQR flete_total,9694
+outliers Z>3 flete_total,1540
+outliers IQR precio_total,7658
+outliers Z>3 precio_total,1660

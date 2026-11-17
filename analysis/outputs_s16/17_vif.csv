@@ -1,0 +1,19 @@
+variable,col,VIF
+Precio del pedido,precio_total,3.6637358527442085
+Flete,flete_total,3.4076774459090298
+Peso,peso_total_g,3.1585703883492715
+Distancia vendedor-comprador (km),distancia_km,2.677621123130327
+Flete / precio,ratio_flete,2.6659912888392987
+Volumen,volumen_total_cm3,2.5898995675717753
+Vendedor y comprador en el mismo estado,mismo_estado,2.403573332122548
+Días de entrega históricos del vendedor,vend_hist_dias,1.7567856829388098
+Plazo prometido (días),dias_estimados,1.7124059240036573
+% de entregas tardías históricas del vendedor,vend_hist_tardio,1.6987173748044746
+Ítems por pedido,n_items,1.3726187079941277
+Cuotas de pago,n_cuotas,1.2590866100823708
+Vendedores en el pedido,n_vendedores,1.0949696788139158
+Carga relativa de la plataforma (7 días vs. 8 semanas previas),carga_rel,1.0878429528608236
+Pedidos previos del vendedor,vend_hist_n,1.0717867465845363
+Días hasta aprobar el pago,dias_aprobacion,1.0433292443260063
+Día de la semana de compra,dia_semana,1.014013277648458
+Hora de compra,hora,1.0029036114824348

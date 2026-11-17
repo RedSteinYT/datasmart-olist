@@ -1,0 +1,42 @@
+{
+ "AUC_REF": 0.7198269273729879,
+ "AP_REF": 0.1382643665962256,
+ "MAE_REF": 4.274221153523781,
+ "tardias_ref": 0.04231122683412467,
+ "n_ref": 26116,
+ "n_versiones": 28,
+ "alertas_D": [
+  [
+   "2017-11",
+   "D. Solo si hay alerta, ventana 2 meses"
+  ],
+  [
+   "2017-12",
+   "D. Solo si hay alerta, ventana 2 meses"
+  ],
+  [
+   "2018-01",
+   "D. Solo si hay alerta, ventana 2 meses"
+  ],
+  [
+   "2018-02",
+   "D. Solo si hay alerta, ventana 2 meses"
+  ],
+  [
+   "2018-03",
+   "D. Solo si hay alerta, ventana 2 meses"
+  ],
+  [
+   "2018-06",
+   "D. Solo si hay alerta, ventana 2 meses"
+  ],
+  [
+   "2018-07",
+   "D. Solo si hay alerta, ventana 2 meses"
+  ],
+  [
+   "2018-08",
+   "D. Solo si hay alerta, ventana 2 meses"
+  ]
+ ]
+}

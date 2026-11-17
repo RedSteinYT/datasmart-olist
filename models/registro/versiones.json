@@ -1,0 +1,226 @@
+[
+ {
+  "id": "v1-referencia",
+  "politica": "todas (inicio)",
+  "entrenado_con": "ene-sep 2017",
+  "n": 26116,
+  "hash": "1d01bb2699687f38",
+  "fecha_sim": "2017-11-01"
+ },
+ {
+  "id": "v2-B-2017-11",
+  "politica": "B. Mensual, ventana 6 meses",
+  "entrenado_con": "6 meses hasta 2017-09",
+  "n": 21167,
+  "hash": "ce30ded0a79e2d5b",
+  "fecha_sim": "2017-11-01"
+ },
+ {
+  "id": "v3-C-2017-11",
+  "politica": "C. Mensual, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2017-09",
+  "n": 8314,
+  "hash": "8e6f226a26b5f854",
+  "fecha_sim": "2017-11-01"
+ },
+ {
+  "id": "v4-B-2017-12",
+  "politica": "B. Mensual, ventana 6 meses",
+  "entrenado_con": "6 meses hasta 2017-10",
+  "n": 23333,
+  "hash": "c15db8356c27eac4",
+  "fecha_sim": "2017-12-01"
+ },
+ {
+  "id": "v5-C-2017-12",
+  "politica": "C. Mensual, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2017-10",
+  "n": 8590,
+  "hash": "7ef127ae973e143a",
+  "fecha_sim": "2017-12-01"
+ },
+ {
+  "id": "v6-D-2017-12",
+  "politica": "D. Solo si hay alerta, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2017-10 (por alerta)",
+  "n": 8590,
+  "hash": "7ef127ae973e143a",
+  "fecha_sim": "2017-12-01"
+ },
+ {
+  "id": "v7-B-2018-01",
+  "politica": "B. Mensual, ventana 6 meses",
+  "entrenado_con": "6 meses hasta 2017-11",
+  "n": 26801,
+  "hash": "2053c27970316647",
+  "fecha_sim": "2018-01-01"
+ },
+ {
+  "id": "v8-C-2018-01",
+  "politica": "C. Mensual, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2017-11",
+  "n": 11452,
+  "hash": "f72acd6a77f1b2c2",
+  "fecha_sim": "2018-01-01"
+ },
+ {
+  "id": "v9-D-2018-01",
+  "politica": "D. Solo si hay alerta, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2017-11 (por alerta)",
+  "n": 11452,
+  "hash": "f72acd6a77f1b2c2",
+  "fecha_sim": "2018-01-01"
+ },
+ {
+  "id": "v10-B-2018-02",
+  "politica": "B. Mensual, ventana 6 meses",
+  "entrenado_con": "6 meses hasta 2017-12",
+  "n": 29410,
+  "hash": "79d18c7eca033f1c",
+  "fecha_sim": "2018-02-01"
+ },
+ {
+  "id": "v11-C-2018-02",
+  "politica": "C. Mensual, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2017-12",
+  "n": 12719,
+  "hash": "b1efb9129289ba6b",
+  "fecha_sim": "2018-02-01"
+ },
+ {
+  "id": "v12-D-2018-02",
+  "politica": "D. Solo si hay alerta, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2017-12 (por alerta)",
+  "n": 12719,
+  "hash": "b1efb9129289ba6b",
+  "fecha_sim": "2018-02-01"
+ },
+ {
+  "id": "v13-B-2018-03",
+  "politica": "B. Mensual, ventana 6 meses",
+  "entrenado_con": "6 meses hasta 2018-01",
+  "n": 32493,
+  "hash": "7b6174d0e491769f",
+  "fecha_sim": "2018-03-01"
+ },
+ {
+  "id": "v14-C-2018-03",
+  "politica": "C. Mensual, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2018-01",
+  "n": 12392,
+  "hash": "7cbf784f9ad99e49",
+  "fecha_sim": "2018-03-01"
+ },
+ {
+  "id": "v15-D-2018-03",
+  "politica": "D. Solo si hay alerta, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2018-01 (por alerta)",
+  "n": 12392,
+  "hash": "7cbf784f9ad99e49",
+  "fecha_sim": "2018-03-01"
+ },
+ {
+  "id": "v16-B-2018-04",
+  "politica": "B. Mensual, ventana 6 meses",
+  "entrenado_con": "6 meses hasta 2018-02",
+  "n": 34700,
+  "hash": "97720e9a946acda9",
+  "fecha_sim": "2018-04-01"
+ },
+ {
+  "id": "v17-C-2018-04",
+  "politica": "C. Mensual, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2018-02",
+  "n": 13278,
+  "hash": "335169b9ebf3ee51",
+  "fecha_sim": "2018-04-01"
+ },
+ {
+  "id": "v18-D-2018-04",
+  "politica": "D. Solo si hay alerta, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2018-02 (por alerta)",
+  "n": 13278,
+  "hash": "335169b9ebf3ee51",
+  "fecha_sim": "2018-04-01"
+ },
+ {
+  "id": "v19-B-2018-05",
+  "politica": "B. Mensual, ventana 6 meses",
+  "entrenado_con": "6 meses hasta 2018-03",
+  "n": 37680,
+  "hash": "285786873c7d5fab",
+  "fecha_sim": "2018-05-01"
+ },
+ {
+  "id": "v20-C-2018-05",
+  "politica": "C. Mensual, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2018-03",
+  "n": 13339,
+  "hash": "6c815b28aff089e0",
+  "fecha_sim": "2018-05-01"
+ },
+ {
+  "id": "v21-B-2018-06",
+  "politica": "B. Mensual, ventana 6 meses",
+  "entrenado_con": "6 meses hasta 2018-04",
+  "n": 40131,
+  "hash": "f1061e94141bdb63",
+  "fecha_sim": "2018-06-01"
+ },
+ {
+  "id": "v22-C-2018-06",
+  "politica": "C. Mensual, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2018-04",
+  "n": 13711,
+  "hash": "1228fc390bedbf26",
+  "fecha_sim": "2018-06-01"
+ },
+ {
+  "id": "v23-B-2018-07",
+  "politica": "B. Mensual, ventana 6 meses",
+  "entrenado_con": "6 meses hasta 2018-05",
+  "n": 39655,
+  "hash": "36106230c4d13e80",
+  "fecha_sim": "2018-07-01"
+ },
+ {
+  "id": "v24-C-2018-07",
+  "politica": "C. Mensual, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2018-05",
+  "n": 13519,
+  "hash": "6e4273dc7a9fcf10",
+  "fecha_sim": "2018-07-01"
+ },
+ {
+  "id": "v25-D-2018-07",
+  "politica": "D. Solo si hay alerta, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2018-05 (por alerta)",
+  "n": 13519,
+  "hash": "6e4273dc7a9fcf10",
+  "fecha_sim": "2018-07-01"
+ },
+ {
+  "id": "v26-B-2018-08",
+  "politica": "B. Mensual, ventana 6 meses",
+  "entrenado_con": "6 meses hasta 2018-06",
+  "n": 40240,
+  "hash": "a5c5244aeffc9ee3",
+  "fecha_sim": "2018-08-01"
+ },
+ {
+  "id": "v27-C-2018-08",
+  "politica": "C. Mensual, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2018-06",
+  "n": 12817,
+  "hash": "86b35fd23f8083f6",
+  "fecha_sim": "2018-08-01"
+ },
+ {
+  "id": "v28-D-2018-08",
+  "politica": "D. Solo si hay alerta, ventana 2 meses",
+  "entrenado_con": "2 meses hasta 2018-06 (por alerta)",
+  "n": 12817,
+  "hash": "86b35fd23f8083f6",
+  "fecha_sim": "2018-08-01"
+ }
+]

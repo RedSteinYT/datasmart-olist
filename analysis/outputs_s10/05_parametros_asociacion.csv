@@ -1,0 +1,2 @@
+clientes_totales,canastas_multicategoria,min_support,min_confidence,max_len,mismos_itemsets
+93349,2270,0.004,0.05,3,True

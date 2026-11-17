@@ -1,0 +1,4 @@
+modelo,exactitud,F1_negativa,F1_macro,AUC_ROC
+Regresión logística,0.9284,0.8702,0.9104,0.9725
+Naive Bayes (complemento),0.9127,0.8471,0.893,0.9699
+SVM lineal,0.9289,0.8708,0.9109,0.972

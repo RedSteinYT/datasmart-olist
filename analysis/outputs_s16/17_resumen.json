@@ -1,0 +1,19 @@
+{
+ "k90": 13,
+ "n_num": 18,
+ "vif_max": 3.6637358527442085,
+ "vif_gt5": [],
+ "seleccion": [
+  "dias_estimados",
+  "carga_rel",
+  "distancia_km",
+  "vend_hist_dias",
+  "vend_hist_tardio",
+  "dias_aprobacion"
+ ],
+ "corr_max": 0.7776538275212846,
+ "par": [
+  "peso_total_g",
+  "volumen_total_cm3"
+ ]
+}

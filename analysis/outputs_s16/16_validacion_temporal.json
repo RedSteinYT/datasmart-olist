@@ -1,0 +1,13 @@
+{
+ "entrena": "oct-2016..feb-2018 (entregados antes de abr-2018)",
+ "prueba": "abr-ago 2018",
+ "n_train": 56963,
+ "n_test": 32150,
+ "tardias_train": 0.07106367291048575,
+ "tardias_test": 0.06021772939346812,
+ "AUC_ROC": 0.7041292687233274,
+ "AUC_PR": 0.11395071620557301,
+ "Brier": 0.059135787189006805,
+ "prob_media": 0.09289439022541046,
+ "MAE_regresion": 5.341778842111779
+}
