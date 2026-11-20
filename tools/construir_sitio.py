@@ -9,7 +9,7 @@ datos = {p.stem: json.load(open(p)) for p in (W / "data").glob("*.json")}
 h = (W / "index.html").read_text()
 css = (W / "css/app.css").read_text()
 h = h.replace('<link rel="stylesheet" href="css/app.css">', f"<style>{css}</style>")
-orden = ["vendor/d3.min.js", "js/logo.js", "js/brasil.js", "js/model.js", "js/texto.js", "js/charts.js", "js/app_core.js", "js/app_modelo.js", "js/main.js"]
+orden = ["vendor/d3.min.js", "js/logo.js", "js/fotos.js", "js/brasil.js", "js/model.js", "js/texto.js", "js/charts.js", "js/app_core.js", "js/app_modelo.js", "js/main.js"]
 for s in orden: h = h.replace(f'<script src="{s}"></script>', "")
 embed = "window.DATA_EMBED=" + json.dumps(datos, ensure_ascii=False, separators=(",", ":")) + ";"
 js = embed + "\n" + "\n".join((W / s).read_text().replace("</script>", "<\\/script>") for s in orden)
